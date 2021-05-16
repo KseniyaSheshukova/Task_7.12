@@ -1,93 +1,453 @@
+
+@font-face {
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-family: "Roboto Regular";
+}
 body {
+    font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.section_first, .section_fifth, .section_seventh {
+    background-color: #EEEFF1;
+}
+
+.section_second, .section_fourth, .section_work_image, .section_sixth {
+    background-color: #F9F9F9;
+}
+
+.section_third, .section_eighth {
+    background-color: #34547A;
+}
+
+.section_work_image_1 {
+    padding-top: 30px;
+}
+
+.header_container {
+    padding-top: 68px; 
+    padding-bottom: 157px;
+}
+
+.about_container {
+    padding-top: 112px; 
+    padding-bottom: 100px;
+}
+
+.skills_container {
+    padding-top: 102px; 
+    padding-bottom: 102px;
+}
+
+.work_container {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.microsoft_container {
+    padding-top: 72px; 
+    padding-bottom: 100px;
+}
+
+.feedback_container {
+    padding-top: 100px; 
+    padding-bottom: 205px;
+}
+
+.footer_container {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+.nav_menu {
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px){
+    .nav_menu  {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .row.header_row {
+        margin-top: 50px;
+    } 
+    .menu {
+        padding-left: 0;
+    }
+}  
+
+.nav_link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    }
+
+.nav-item a {
+    color:#000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+}
+
+.nav-item a.active {
+    color:#34547A;
+}
+
+.nav-item a:hover {
+    color:#34547A;
+}
+
+.header_row{
+    align-items:center;
+    margin-top: 162px;
+}
+
+.img_notebook {
+    justify-content: center; 
+}
+
+img.notebook{
+    height:233.7px;
+    Width: 357px;
+}
+
+.main_headline {
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-color: #d0d1d3;
-    background: url('https://images.unsplash.com/photo-1616004655123-818cbd4b3143?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80') bottom no-repeat;
-    background-size: 100%;
+@media screen and (max-width: 990px){
+    .main_info {
+        text-align: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+}  
+
+.loren_ipsum {
+    color: #727272;
+    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
-h1 {
-    color: #F0E68C;
-    font-size: 3rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.copyright {
-    color: rgb(108, 117, 125);
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.news {
-    background-color: #fff;
-    padding: 50px 0 32px;
-} 
-
-article {
-    width: 768px;
-    margin: 0 auto 32px;
-    padding: 6px 15px;
-    border-bottom: 1px solid rgb(128, 128, 128);
-}
-
-article:nth-child(even) {
-    background-color: #FFF5EE;
-}
-
-article:nth-child(1) h2::after,
-article:nth-child(2) h2::after {
-    content: "   NEW";
-    color: #C0C0C0;
-    font-size: 25px;
-}
-
-article a {
-    color: rgb(33, 37, 41);
-    text-decoration: none;
-}
-
-article a:hover {
-    color: #0085a1
-}
-
-article h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-}
-
-.article-meta {
-    color: rgb(134, 142, 150);
-    margin-bottom: 5px;
-}
-
-article img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-footer {
-    padding-top: 20px;
-    padding-bottom: 60px;
+.button_write {
+    Width: 225px;
+    Height: 65px;
+    background-color: #34547A;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 26px;
     text-align: center;
+    letter-spacing: 0.1em;
+    border: none;
 }
 
-footer .links{
+.button_write:hover {
+    background-color: #34547A;
+    Border: none;
+    color: #FFFFFF;
+}
+
+.button_write:active {
+    background-color: #34547A;
+    Border: none;
+    border-radius: 0px;
+    color: #FFFFFF;
+}
+
+
+h2.about_me_headline {
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
     margin-bottom: 50px;
 }
 
-footer .links > a {
-    color: #636b6f;
-    padding: 0 25px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-decoration: none;
-    text-transform: uppercase;
+.about_me p.loren_ipsum, 
+.about_work p.loren_ipsum, 
+.feedback_content p.loren_ipsum{
+    line-height: 140%;
+    text-align: center;
+    width: 540px;
+    margin: 0;
+    white-space: normal;
+}
+
+.logo_project_row{	
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+img.logo_project {
+    width: 141px;
+    height: 50px;
+}
+
+@media screen and (max-width: 991px){
+
+    .row_skills {
+        text-align: center;
+    }
+
+    .skills-photoshop {
+        text-align:left;
+        padding-left: 70px
+    }
+
+    .my_skills {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .skills-photoshop {
+        text-align:left;
+        padding-left: 0px
+    }
+}
+
+.my_skills_headline {
+    font-weight: bold;
+    font-size: 32px;
+    color: #000000;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.skills-photoshop {
+    margin-bottom: 15px;
+}
+
+p.skills-name {
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+    margin: 0;
+    padding: 0;
+}
+
+div.skills_progress, div.about_work_video {
+    position: relative;
+
+}
+
+img.skills_progress_2 {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+}
+
+img.my_skills_img {
+    Width: 555px;
+    Height: 450px;
+}
+
+h2.about_work_headline {
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.about_work p.loren_ipsum{ 
+    margin: 50px 0 50px 0;
+}
+
+img.work_video {
+    Width: 1110px;
+    Height: 600px;
+}
+
+
+@media screen and (max-width: 1200px){
+    img.work_video{
+        Width: 100%
+    }
+
+    .about_work_video a {
+        position: absolute;
+        left: -5%;
+    }
+}
+@media screen and (max-width: 991px){
+
+    .about_work_video a {
+        position: absolute;
+        left: -27%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .about_work_video a {
+        position: absolute;
+        left: -50%;
+    }
+
+}
+
+
+img.play_logo {
+    Width: 100px;
+    Height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 505px;
+}
+
+img.work_image {
+    Width: 480px;
+    Height: 480px;
+}
+
+div.image_with_background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 84, 122);
+}
+
+.image_with_background img {
+    opacity: 0.2;
+}
+.work_image_special {
+    Width: 480px;
+    Height: 480px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+img.eye_img {
+    Width: 100px;
+    Height: 100px;
+    position: absolute;
+    top: 190px;
+    left: 190px;
+}
+
+img.microsoft_project {
+    Width: 255px;
+    Height: 120px;
+    margin: 0 15px 0 15px;
+}
+
+h2.feedback_headline {
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback_row {
+    justify-content: center;
+}
+
+.feedback_form {
+    width: 540px;
+    Font-size: 14px;
+    line-height: 22.97px;
+    position: relative;
+    vertical-align:top;
+}
+
+input:focus, textarea:focus {
+    color: #727272; 
+    outline: none; 
+}
+
+input.name, input.email {
+    Width: 255px;
+    Height: 50px;
+    padding: 17px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px){
+    input.name, input.email {
+        Width: 540px;
+    }
+
+}
+
+textarea.message {
+    Width: 540px;
+    Height: 175px;
+    padding: 17px;
+    border: none;
+    
+}
+
+.submit_button {
+    position: absolute;
+    Width: 190px;
+    Height: 55px;
+    left: 32%;
+    border-radius: 0;
+    Border: none;
+    background-color: #34547A;
+    color: #FFFFFF;
+    font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.97px;
+    letter-spacing: 0.1em;
+    margin: 50px 0 0 0;
+}
+
+.submit_button:hover {
+    background-color: #34547A;
+    Border: none;
+    color: #FFFFFF;
+}
+
+.submit_button:active {
+    background-color: #34547A;
+    Border: none;
+    color: #FFFFFF;
+}
+
+.feedback_content p.loren_ipsum{ 
+    margin: 50px 0 65px 0;
+}
+
+.footer {
+    color: #FFFFFF;
+}
+
+h3.author_headline {
+    Font-size: 21px;
+    Line-height: 24.61px;
+}
+
+p.coopyright {
+    Font-size: 13px;
+    Line-height: 21.33px;
+    padding: 0;
+    margin: 0;
+}
+
+img.vk_logo {
+    margin: 0 0 0 22px;
 }
